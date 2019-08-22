@@ -69,7 +69,7 @@ class CompanieController extends Controller
      */
     public function show()
     {
-        $companies=Companie::paginate(4);
+        $companies=Companie::paginate(4 );
         return view('companie.show',compact('companies'));
 
     }
